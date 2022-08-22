@@ -1,4 +1,4 @@
-// Table for top 5 selection 
+// For top 5 selection 
 
 const topFiveArray = [];
 function displayTopFiveToTable(arr) {
@@ -26,9 +26,9 @@ function addToTopFive(element) {
     }
 }
 
-// budget section 
+// Budget section 
 
-// calculate button 
+// Calculate button 
 document.getElementById('calculate').addEventListener('click', function totalPlayerExpense() {
     const avgPlayerExpenses = getFieldValueById('player-expense-field');
     const playesExpenses = document.getElementById('players-cost');
@@ -51,7 +51,6 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const managerExpense = getFieldValueById('manager-expense-field');
     const coachExpense = getFieldValueById('coach-expense-field');
     const totalExpense = document.getElementById('total-cost');
-    console.log(playersExpense);
     if (playersExpenseString == '') {
         alert('Please calculate player expense first')
     } else if (managerExpense > 0 && coachExpense > 0) {
@@ -60,7 +59,6 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     else {
         alert('Please add valid input inside the input field');
     }
-
-
-
 })
+
+//------------------------ End---------------------------------- 
