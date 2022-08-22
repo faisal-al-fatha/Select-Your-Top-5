@@ -121,7 +121,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-start-4 row-end-1 card rounded-none bg-black shadow-xl">
+            <!-- Table section  -->
+            <div class="col-start-4 row-end-1 card rounded-none bg-black shadow-xl p-6">
                 <table>
                     <!-- head -->
                     <thead>
@@ -135,38 +136,40 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-start-4 row-end-2 card rounded-none bg-black shadow-xl">
-                <div>
-                    <table class="table">
-                        <!-- head -->
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Name</th>
+            <!-- Budget section  -->
+            <div class=" row-end-3 col-start-4 row-span-2 ">
+                <div class="card rounded-none bg-black shadow-xl py-5 px-6">
+                    <h2 class="text-center text-2xl font-semibold mb-6">Budget</h2>
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm">Per Player:
+                        </p>
+                        <input type="number" value="1000"
+                            class="input input-bordered input-success bg-black border-white w-2/5 max-w-xs rounded-none" />
+                    </div>
+                    <div class="card-actions justify-center mx-auto my-3">
+                        <button class="px-24 py-1 bg-blue-800" id="calculate">Calculate</button>
+                    </div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-sm">Player expenses:
+                        </p>
+                        <p>$ <span id="players-cost"></span></p>
+                    </div>
+                    <div class="flex justify-between items-center my-3">
+                        <p class="text-sm">Manager:
+                        </p>
+                        <input type="number" value=""
+                            class="input input-bordered input-success bg-black border-white w-2/5 max-w-xs rounded-none" />
+                    </div>
+                    <div class="flex justify-between items-center my-3">
+                        <p class="text-sm">Coach:
+                        </p>
+                        <input type="number" value=""
+                            class="input input-bordered input-success bg-black border-white w-2/5 max-w-xs rounded-none" />
+                    </div>
+                    <div class="card-actions justify-center mx-auto my-3">
+                        <button class="px-24 py-1 bg-blue-800" id="calculate">Calculate Total</button>
+                    </div>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- row 1 -->
-                            <tr>
-                                <th>1</th>
-                                <td>Cy Ganderton</td>
-
-                            </tr>
-                            <!-- row 2 -->
-                            <tr>
-                                <th>2</th>
-                                <td>Hart Hagerty</td>
-
-                            </tr>
-                            <!-- row 3 -->
-                            <tr>
-                                <th>3</th>
-                                <td>Brice Swyre</td>
-
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
 
