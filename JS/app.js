@@ -30,7 +30,7 @@ function addToTopFive(element) {
 
 // calculate button 
 document.getElementById('calculate').addEventListener('click', function totalPlayerExpense() {
-    const avgPlayerExpenses = getFieldValueById('playerExpenseField');
+    const avgPlayerExpenses = getFieldValueById('player-expense-field');
     const playesExpenses = document.getElementById('players-cost');
     if (avgPlayerExpenses > 0) {
         playesExpenses.innerText = avgPlayerExpenses * topFiveArray.length;
@@ -40,6 +40,15 @@ document.getElementById('calculate').addEventListener('click', function totalPla
     else {
         alert('please insurt a valid player expense')
     }
-    // playesExpenses.innerText = avgPlayerExpenses * topFiveArray.length;
-    console.log(avgPlayerExpenses);
+
+})
+
+// calculate total button 
+document.getElementById('calculate-total-btn').addEventListener('click', function totalExpense() {
+    const playersExpenseString = document.getElementById('players-cost').innerText;
+    const playersExpense = parseFloat(playersExpenseString);
+    const managerExpense = getFieldValueById('manager-expense-field');
+    const coachExpense = getFieldValueById('coach-expense-field');
+    const totalExpense = document.getElementById('total-cost');
+    totalExpense.innerText = playersExpense + managerExpense + coachExpense;
 })
