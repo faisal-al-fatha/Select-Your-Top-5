@@ -36,7 +36,7 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-semibold mb-6">Kylian Mbappé</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-semibold mb-6">Lionel Messi</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-semibold mb-6">Neymar</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-semibold mb-6">Sergio Ramos</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-semibold mb-6">Keylor Navas</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
@@ -86,18 +86,18 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-semibold mb-6">Achraf Hakimi</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
             <!-- card 7  -->
             <div class="card rounded-none bg-black shadow-xl">
-                <figure><img class="h-48 object-cover" src="./Images/Gianluigi Donnarumma.jpg" alt="Player" />
+                <figure><img class="h-48 object-cover" src="./Images/Mauro Icardi.jpeg" alt="Player" />
                 </figure>
                 <div class="card-body">
-                    <h2 class="text-center text-2xl font-semibold mb-6">Gianluigi Donnarumma</h2>
+                    <h2 class="text-center text-2xl font-semibold mb-6">Mauro Icardi</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-semibold mb-6">Presnel Kimpembe</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-semibold mb-6">Pablo Sarabia</h2>
                     <div class="card-actions justify-end mx-auto">
-                        <button class="px-20 py-1 bg-blue-800">Select</button>
+                        <button class="px-20 py-1 bg-blue-800 selection-button">Select</button>
                     </div>
                 </div>
             </div>
@@ -136,38 +136,59 @@
                     </tbody>
                 </table>
             </div>
+
+
             <!-- Budget section  -->
             <div class=" row-end-3 col-start-4 row-span-2 ">
-                <div class="card rounded-none bg-black shadow-xl py-5 px-6">
+                <div class="card rounded-none bg-black shadow-xl py-10 px-6">
                     <h2 class="text-center text-2xl font-semibold mb-6">Budget</h2>
+
+                    <!-- Player avg expense section  -->
                     <div class="flex justify-between items-center">
                         <p class="text-sm">Per Player:
                         </p>
-                        <input type="number" value="1000"
+                        <input type="number" value=""
                             class="input input-bordered input-success bg-black border-white w-2/5 max-w-xs rounded-none" />
                     </div>
+
+                    <!-- calculate button  -->
                     <div class="card-actions justify-center mx-auto my-3">
-                        <button class="px-24 py-1 bg-blue-800" id="calculate">Calculate</button>
+                        <button class="px-20 py-1 bg-blue-800" id="calculate">Calculate</button>
                     </div>
+
+                    <!-- Player expenses section  -->
                     <div class="flex justify-between items-center mt-3">
                         <p class="text-sm">Player expenses:
                         </p>
                         <p>$ <span id="players-cost"></span></p>
                     </div>
+
+                    <!-- manager input section  -->
                     <div class="flex justify-between items-center my-3">
                         <p class="text-sm">Manager:
                         </p>
                         <input type="number" value=""
                             class="input input-bordered input-success bg-black border-white w-2/5 max-w-xs rounded-none" />
                     </div>
+
+                    <!-- coach input section  -->
                     <div class="flex justify-between items-center my-3">
                         <p class="text-sm">Coach:
                         </p>
                         <input type="number" value=""
                             class="input input-bordered input-success bg-black border-white w-2/5 max-w-xs rounded-none" />
                     </div>
+
+                    <!-- calculate total button  -->
                     <div class="card-actions justify-center mx-auto my-3">
-                        <button class="px-24 py-1 bg-blue-800" id="calculate">Calculate Total</button>
+                        <button class="px-16 py-1 bg-blue-800" id="calculate-total-btn">Calculate Total</button>
+                    </div>
+
+                    <!-- Total expenses  -->
+                    <div class="flex justify-between items-center my-3">
+                        <p class="text-sm">Total expenses:
+                        </p>
+                        <p class="text-orange-600">$ <span id="total-cost"></span></p>
                     </div>
 
                 </div>
@@ -179,6 +200,7 @@
 
 
 
+    <script src="./JS/utilities.js"></script>
     <script src="./JS/app.js"></script>
 </body>
 
